@@ -1,0 +1,575 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root {
+    --dark: rgb(51, 55, 110);/*color for font,and header backgroung color*/
+    --light: rgb(156, 221, 209);/*color for header link font,border of 5 projects,box*/
+}
+
+header {
+    background-color: var(--dark);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    background-color: var(--light);
+    color: var(--dark);
+    text-align: right;
+    flex: 0 0 20%;
+    font-size: 35px;
+    padding: 0.2em;
+}
+
+#main-links {
+    flex: 0 0 25%;/*links in header*/
+    text-align: right;
+    margin: 0% 5%;
+}
+
+#main-links li {
+    color: var(--light);
+    display: inline-block;
+    font-size: 18px;
+    margin: 0.5em 0.5em;
+    padding: 0em 0.5em;
+    border-bottom:solid 3px var(--light);
+}
+
+.section-links:visited, .section-links:focus, .section-links:link {
+    color: var(--light);/*link font color(aboutme,work,contactme,linkedln*/
+    text-decoration: none;
+}
+
+#main {/*web development section*/
+    width: 100vw;
+    height: 15vh;
+    background-image: url("");/*images */
+    background-color:rgb(182, 197, 223);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#main h2 {
+    background-color: var(--light);
+    color: var(--dark);/*web development box*/
+    text-align: center;
+    flex: 0 0 12%;
+    font-size: 20px;
+    margin: 1.5% 5%;
+    padding: 0.2em;
+}
+
+#about-me {/*aboutme*/
+    background-color: white;
+    width: 100vw;
+    height: 15vh;/*height of border line*/
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3% 0%;
+}
+
+#about-me h1 {
+    background-color: white;
+    color: var(--dark);
+    flex: 0 0 30%;
+    width: 28%;
+    border-right: solid 3px var(--dark);
+    text-align: right;
+    font-size: 30px;
+    padding: 0.5%;
+}
+
+#about-me p {
+    background-color: white;
+    color: var(--dark);
+    flex: 0 0 64%;
+    width: 60%;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0.25% 0.5%;
+    margin: 0% 5% 0% 0%;
+}
+
+#work {/*work*/
+    background-color: white;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3% 0%;
+}
+
+#work h1 {
+    background-color: white;
+    color:var(--dark);
+    flex: 0 0 30%;
+    width: 28%;
+    border-right: solid 3px var(--dark);
+    text-align: right;
+    font-size: 30px;
+    padding: 0.5%;
+    
+}
+
+#apps {/*5 projects section*/
+    background-color: white;
+    flex: 0 0 64%;
+    width: 60%;
+    padding: 0.25% 0.5%;
+    margin: 0% 5% 0% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#css-cheat-sheet {
+    background-image: url();/*cheapsheet mini project*/
+    background-position: cover;
+    background-size: 50%;
+    flex: 0 0 100%;
+    height: 40%;
+    border: solid 3px var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    order: 1;/*displayed first* in order 1*/
+    position: relative;
+}
+
+#landing-page {
+    background-image: url("https://user-images.githubusercontent.com/41078587/146851920-b586e849-5b5f-428b-9f63-3086886f38d6.png");/*landing page my website*/
+    background-position: right;
+    background-size: 100%;
+    flex: 0 0 48%;
+    height: 21%;
+    border: solid 3px var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    order: 2;
+    position: relative;
+    z-index: 100;
+}
+
+#html {
+    background-image: url("");/*code refactor */
+    background-position: cover;
+    background-size: cover;
+    flex: 0 0 48%;
+    height: 21%;
+    border: solid 3px var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    order: 3;
+    position: relative;
+}
+
+
+#version-control-system {/*coming soon*/
+    background-image: url("");
+    background-position: cover;
+    background-size: cover;
+    flex: 0 0 48%;
+    height: 21%;
+    border: solid 3px var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    order: 4;
+    position: relative;
+}
+
+#css {
+    background-image: url("");/*advanced css portfolio image*/
+    background-position: center;
+    background-size: cover;
+    flex: 0 0 48%;
+    height: 21%;
+    border: solid 3px var(--light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    order: 5;
+    position: relative;
+}
+
+#principal-app {/*cheat sheet*/
+    background-color: var(--light);
+    color: var(--dark);
+    width: 13%;/*change the width of cheat sheet */
+    padding: 0.5%;
+    margin: 0% 0% 3% 0%;
+    z-index: 100;
+}
+
+.other-apps {/*for other 4 projects*/
+    background-color: var(--light);
+    color: var(--dark);
+    width: 25%;/* change the width of landing page,html,css,coming soon*/
+    padding: 1%;
+    margin: 0% 0% 6%;
+    z-index: 100;
+}
+
+#principal-app h3, .other-apps h3 {
+    font-size: 20px;   /*font size for cheatsheet,html,css coming soon and landing page*/ 
+}
+
+#principal-app h5, .other-apps h5 {
+    font-size: 13px;/*font-size for css snippet selector,my website, code refactor,coming soon and variables.*/
+}
+
+.flex-items::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgb(138, 130, 130);
+   
+    opacity: 0.8;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flex-items:hover::after {
+    opacity: 1;/*when points to projects the background opacity is 1*/
+}
+
+.flex-items:hover {
+    cursor: pointer;
+}
+
+.flex-items:visited, .flex-items:focus, .flex-items:link {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+#contact-me {/*contactme*/
+    background-color: white;
+    color: var(--dark);
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3% 0%;
+}
+
+#contact-me h1 {
+    background-color: white;
+    color: var(--dark);
+    flex: 0 0 30%;
+    width: 10%;
+    border-right: solid 3px var(--dark);
+    text-align: right;
+    font-size: 30px;
+    padding: 0.5%;
+}
+
+#footer-links {
+    background-color: white;
+    flex: 0 0 60%;
+    width: 60%;
+    margin: 1% 5% 1% 1%;
+    text-align: center;
+    align-self: center;
+}
+
+#footer-links li {
+    color: var(--dark);
+    display: inline-block;
+    font-size: 15px;
+    margin: 0em 0.5em 0.5em 0.5em;
+    padding: 0em 0.5em;
+    border-bottom: solid 3px var(--dark);
+}
+
+.contact-links:visited, .contact-links:focus, .contact-links:link {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+
+    header #main-links {
+        flex: 0 0 60%
+    }
+    
+    #main {
+        height: 15vh;
+    }
+    
+    #main h2 {
+        flex-basis: 30%;
+    }
+
+    #about-me {
+        height: 48vh;
+    }
+
+    #work {
+        height: 60vh;
+    }
+
+    #html, #css, #version-control-system, #landing-page {
+        flex: 0 0 47%;
+    }
+
+    #principal-app {
+        width: 31%;
+    }
+    
+    .other-apps {
+        width: 66%;
+    }
+
+    #footer-links {
+        flex: 0 0 65%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    header #main-links {
+        flex: 0 0 50%
+    }
+    
+    #main {
+        height: 20vh;
+    }
+    
+    #main h2 {
+        flex-basis: 40%;
+    }
+
+    #about-me {
+        height: 40vh;
+    }
+
+    #work {
+        height: 60vh;
+    }
+
+    #html, #css, #version-control-system, #landing-page {
+        flex: 0 0 47%;
+    }
+
+    #principal-app {
+        width: 31%;
+    }
+    
+    .other-apps {
+        width: 66%;
+    }
+
+    #footer-links {
+        flex: 0 0 65%;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    header, #main, #about-me, #work, #apps, #contact-me, .flex-items {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header {
+        height: 18vh;
+    }
+
+    header h1, header #main-links {
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+        flex: 0 0 0%;
+    }
+
+    #main {
+        height: 25vh;
+        margin-bottom: 5%;
+    }
+
+    #main h2 {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        flex: 0 0 0%;
+    }
+
+    #about-me {
+        height: 54vh;
+        margin-bottom: 5%;
+    }
+
+    #about-me h1, #work h1, #contact-me h1 {
+        width: 100%;
+        flex: 0 0 0%;
+        text-align: center;
+        border-right: none;
+        border-bottom: solid 4px var(--dark);
+        padding: 0%;
+        margin-bottom: 2%;
+    }
+
+    #about-me h1 br, #contact-me h1 br {
+        display: none;
+    }
+
+    #about-me p {
+        flex: 0 0 0%;
+        width: 95%;
+        margin:0%;
+        padding: 2.5%;
+    }
+
+    #work {
+        height: 120vh;
+        margin-bottom: 5%;
+    }
+
+    #apps {
+        width: 100%;
+        flex: 0 0 0%;
+        margin-right: 0%;
+        padding: 0%;
+        gap: 4%;
+    }
+
+    #css-cheat-sheet, #html, #css, #version-control-system, #landing-page {
+        width: 90%;
+        flex: 0 0 50%;
+        justify-content: flex-end;
+    }
+
+    #principal-app {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .other-apps {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #contact-me {
+        height: 40vh;
+    }
+
+    #footer-links {
+        width: 100%;
+        flex: 0 0 0%;
+        margin: 0%;
+    }
+    
+    #footer-links li {
+        display: block;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+
+    header {
+        height: 23vh;
+    }
+
+    #main {
+        height: 25vh;
+    }
+
+    #about-me {
+        height: 66vh;
+    }
+
+    #work {
+        height: 123vh;
+    }
+
+    #contact-me {
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+    header {
+        height: 25vh;
+    }
+
+    #main {
+        height: 25vh;
+    }
+
+    #about-me {
+        height: 82vh;
+    }
+
+    #work {
+        height: 132vh;
+    }
+
+    #contact-me {
+        height: 45vh;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    header {
+        height: 30vh;
+    }
+
+    #main {
+        height: 25vh;
+    }
+
+    #about-me {
+        height: 105vh;
+    }
+
+    #work {
+        height: 148vh;
+    }
+
+    #contact-me {
+        height: 50vh;
+    }
+
+}
+.section-links:hover {
+color: rgb(227, 227, 235);
+}
+.contact-links:hover{
+  color: rgb(12, 12, 223);  
+}
