@@ -5,7 +5,9 @@
  *  https://www.w3schools.com/
  *  https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12287460#search
   
-## Deployed Link: https://sahanamai.github.io/homework-portfolio/
+## Deployed Link: 
+Link: https://sahanamai.github.io/homework-portfolio/
+Repo Link:
 
 ## Screenshot:
 
