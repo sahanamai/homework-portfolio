@@ -5,8 +5,8 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 :root {
-    --dark: rgb(51, 55, 110);/*color for font,and header backgroung color*/
-    --light: rgb(156, 221, 209);/*color for header link font,border of 5 projects,box*/
+    --dark: rgb(58, 62, 112);/*color for font,and header backgroung color*/
+    --light: rgb(146, 179, 173);/*color for header link font,border of 5 projects,box*/
 }
 
 header {
@@ -44,7 +44,7 @@ header h1 {
 }
 
 .section-links:visited, .section-links:focus, .section-links:link {
-    color: var(--light);/*link font color(aboutme,work,contactme,linkedln*/
+    color: var(--light);/*link font color(aboutme,work,contactme,resume*/
     text-decoration: none;
 }
 
@@ -139,8 +139,8 @@ header h1 {
     align-items: center;
 }
 
-#css-cheat-sheet {
-    background-image: url();/*cheapsheet mini project*/
+#project1 {
+    background-image: url("../css/images/project-1.png");/*project1*/
     background-position: cover;
     background-size: 50%;
     flex: 0 0 100%;
@@ -153,8 +153,8 @@ header h1 {
     position: relative;
 }
 
-#landing-page {
-    background-image: url("https://user-images.githubusercontent.com/41078587/146851920-b586e849-5b5f-428b-9f63-3086886f38d6.png");/*landing page my website*/
+#project3 {
+    background-image: url("");/*project3*/
     background-position: right;
     background-size: 100%;
     flex: 0 0 48%;
@@ -168,8 +168,8 @@ header h1 {
     z-index: 100;
 }
 
-#html {
-    background-image: url("");/*code refactor */
+#workdayscheduler {
+    background-image: url("https://user-images.githubusercontent.com/41078587/149058198-17329128-256a-43d4-add5-96cd19a8ff6b.png");/*work day scheduler */
     background-position: cover;
     background-size: cover;
     flex: 0 0 48%;
@@ -183,8 +183,8 @@ header h1 {
 }
 
 
-#version-control-system {/*project-1*/
-    background-image: url("");
+#project2 {/*project2*/
+    background-image: url("../css/images/project2.png");
     background-position: cover;
     background-size: cover;
     flex: 0 0 48%;
@@ -197,8 +197,8 @@ header h1 {
     position: relative;
 }
 
-#css {
-    background-image: url("");/*advanced css portfolio image*/
+#codequiz {/*code quiz*/
+    background-image: url("https://user-images.githubusercontent.com/41078587/148485897-2592b364-21cd-4a59-b784-70e0f1b6eba8.png");/*codequiz*/
     background-position: center;
     background-size: cover;
     flex: 0 0 48%;
@@ -211,7 +211,7 @@ header h1 {
     position: relative;
 }
 
-#principal-app {/*cheat sheet*/
+#principal-app {/*project1*/
     background-color: var(--light);
     color: var(--dark);
     width: 13%;/*change the width of cheat sheet */
@@ -220,21 +220,21 @@ header h1 {
     z-index: 100;
 }
 
-.other-apps {/*for other 4 projects*/
+.other-apps {
     background-color: var(--light);
     color: var(--dark);
-    width: 25%;/* change the width of landing page,html,css,coming soon*/
+    width: 20%;
     padding: 1%;
     margin: 0% 0% 6%;
     z-index: 100;
 }
 
 #principal-app h3, .other-apps h3 {
-    font-size: 20px;   /*font size for cheatsheet,html,css coming soon and landing page*/ 
+    font-size: 15px;   
 }
 
 #principal-app h5, .other-apps h5 {
-    font-size: 13px;/*font-size for css snippet selector,my website, code refactor,coming soon and variables.*/
+    font-size: 13px;
 }
 
 .flex-items::after {
@@ -244,7 +244,7 @@ header h1 {
     left: 0;
     width:100%;
     height: 100%;
-    background-color: rgb(138, 130, 130);
+    background-color: rgb(138, 133, 133);
    
     opacity: 0.8;
     z-index: 1;
@@ -369,7 +369,7 @@ header h1 {
     }
 
     #work {
-        height: 60vh;
+        height: 50vh;
     }
 
     #html, #css, #version-control-system, #landing-page {
@@ -571,5 +571,5 @@ header h1 {
 color: rgb(227, 227, 235);
 }
 .contact-links:hover{
-  color: rgb(12, 12, 223);  
+  color: rgb(24, 24, 223);  
 }
